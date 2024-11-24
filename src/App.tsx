@@ -16,7 +16,8 @@ function App() {
   return (
     <div>
       {!fetching &&
-        data.authors.map((author: any) => (
+        data &&
+        data.authors.map((author) => (
           <div key={author.name}>
             <h2>{author.name}</h2>
             <ul>
